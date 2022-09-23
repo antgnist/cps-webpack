@@ -38,6 +38,8 @@ document.addEventListener('click', function (event) {
       elem.classList.toggle('burger-button--open');
     });
 
+    document.querySelector('.content__outer-wrapper').classList.toggle('content__outer-wrapper--noscroll');
+
     return;
   }
 
@@ -53,6 +55,8 @@ document.addEventListener('click', function (event) {
       .classList.remove('side-navigation--open');
     document.querySelectorAll('.burger-button').forEach((elem) => {
       elem.classList.remove('burger-button--open');
+
+    document.querySelector('.content__outer-wrapper').classList.remove('content__outer-wrapper--noscroll');
     });
     return;
   }

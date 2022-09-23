@@ -13,6 +13,10 @@
             padding-top: 0;
         }
     }
+    &__outer-wrapper--noscroll {
+        max-height: 100vh;
+        overflow: hidden;
+    }
     &__inner-wrapper {
         position: relative;
         width: 100%;
