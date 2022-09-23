@@ -253,6 +253,9 @@ button.icon-wrapper:hover path {
     @media (min-width: 1440px) {
       .content__outer-wrapper {
         padding-top: 0; } }
+  .content__outer-wrapper--noscroll {
+    max-height: 100vh;
+    overflow: hidden; }
   .content__inner-wrapper {
     position: relative;
     width: 100%;
@@ -390,7 +393,7 @@ button.icon-wrapper:hover path {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: -150%;
   background-color: var(--nothing-bg-color);
