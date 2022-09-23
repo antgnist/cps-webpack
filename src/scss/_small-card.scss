@@ -1,0 +1,21 @@
+.small-card{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--separate-bg-color);
+    background: var(--nothing-bg-color);
+    cursor: pointer;
+    transition: border .3s;
+    @media (min-width:768px){
+      width: 224px;
+    } 
+    @media (min-width:1440px){
+      width: 240px;
+    }
+
+  }

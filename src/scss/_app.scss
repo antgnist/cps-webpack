@@ -1,0 +1,14 @@
+.app {
+
+    min-height: 100vh;
+    @media (min-width:1440px){
+        display: flex;
+        justify-content: center;
+        position: relative;
+    } 
+    @media (min-width:1650px){
+        max-width: 1650px;
+        margin: 0 auto;
+    } 
+
+}

@@ -1,0 +1,9 @@
+.privacy-text{ 
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--subliight-font-color);
+    & a{
+        color:var(--main-theme-color);
+    }
+}

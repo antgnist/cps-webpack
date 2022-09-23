@@ -1,0 +1,13 @@
+.show-more{
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &__text{
+        white-space: nowrap;
+    }
+    &__icon{
+        margin-right: 16px;
+    }
+
+  }

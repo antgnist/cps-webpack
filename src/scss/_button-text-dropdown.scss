@@ -1,0 +1,29 @@
+
+.button-text-dropdown{
+  border-radius: 16px;
+  border: none;
+  background-color: var(--main-theme-color);
+  color: var(--nothing-bg-color);
+  align-self: flex-end;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  font-weight: 600;
+  transition: background-color 0.4s;
+  & span{
+     padding-right: 12px;
+  }
+  &:hover {
+    background-color: var(--hoverelement-bg-color);
+    color: var(--main-theme-color);
+
+  }
+  &:hover svg path {
+    fill: var(--main-theme-color);
+
+  }
+}
+

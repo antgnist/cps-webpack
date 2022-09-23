@@ -1,0 +1,42 @@
+.table-card{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 260px;
+    height: 200px;
+    padding: 16px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--separate-bg-color);
+    background: var(--nothing-bg-color);
+   /* cursor: pointer;*/
+    transition: border .3s;
+
+
+    &__subtitle{
+        font-size: 14px;
+        line-height: 16px;
+        color:var(--subliight-font-color);
+        opacity: 72.18%;
+        padding-bottom: 4px;
+    }
+    
+    &__text{
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+    }
+    &__block-text{
+        display: flex;
+        flex-direction: column;
+    }
+    &__block-button{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button{
+        align-self: flex-end;
+    }
+
+  }

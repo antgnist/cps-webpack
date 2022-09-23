@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+      
+    --main-bg-color:#F8F8F8;
+    --main-theme-color: #ff3e79;
+    --nothing-bg-color: #fff;
+    --main-font-color: #1B1C21;
+    --block-border-color: #d9fff5;
+    --subtitle-decorate-color: #41f6d7;
+    --active-border-color: #B8FFEC;
+    --click-bg-color:#ff3e790d;
+    --subliight-font-color:#7E7E82;
+    --separate-bg-color:#eaeaea;
+    --transparent-elem-color:transparent;
+    --slider-dots-bg-color: #DDDDDD;
+    --slider-dots-active-color: #B5B6BC;
+    --hoverelement-bg-color:#ffe0e9;
+  
+  }
+  *, *:before, *:after {
+      box-sizing: inherit;
+  
+  }
+
+
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    color: var(--main-font-color);
+    font-family: "TT Lakes";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+}
+
+button {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  color: var(--main-font-color);
+  cursor: pointer;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+color: inherit;
+text-decoration: none;
+}
+
+
+
+
+
+
+@media (min-width:768px){
+  body{
+    line-height: 20px;
+  }  
+}

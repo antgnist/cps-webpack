@@ -1,0 +1,89 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    @media(min-width:768px) {
+        display: flex;
+    }
+
+    &__wrapper {
+        padding-bottom: 24px;
+        @media(min-width: 1440px) {
+            padding-bottom: 32px;
+        }
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        color:var(--subliight-font-color);
+        opacity: 72.18%;
+    }
+    &__header-row{
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 16px 16px;
+        line-height: 16px;
+        @media(min-width: 1440px) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+
+    &__subtitle {
+        flex-basis: 18%;
+        display: flex;
+    }
+    &__subtitle--1 {
+        flex-basis: 48%;
+        padding-right: 24px;
+    }
+    &__subtitle--3 {
+        flex-basis: 34%;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        border-radius: 6px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: var(--nothing-bg-color);
+        line-height: 18px;
+        @media(min-width: 1440px) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--separate-bg-color);
+        @media(min-width: 1440px) {
+       /*     padding: 16px 0;*/
+        }
+    }
+    &__cell {
+        flex-basis: 18%;
+        display: flex;
+    }
+    &__cell--1{
+        flex-basis: 48%;
+        padding-right: 24px;
+    }
+    &__cell--4 {
+        justify-content: flex-end;
+    }
+    &__button {
+        padding: 4px 18px;
+    }
+    &__slider {
+        position: relative;
+        @media (min-width:768px){
+            display: none;
+        }
+    }
+    
+
+}

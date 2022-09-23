@@ -1,0 +1,32 @@
+.large-card{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 160px;
+    padding: 16px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--separate-bg-color);
+    background: var(--nothing-bg-color);
+    cursor: pointer;
+    transition: border .3s;
+    @media (min-width:768px){
+      width: 224px;
+    } 
+    @media (min-width:1440px){
+      width: 240px;
+    }
+
+    &__subtitle{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+        align-self: flex-start;
+    }
+    &__button{
+        align-self: flex-end;
+    }
+
+  }

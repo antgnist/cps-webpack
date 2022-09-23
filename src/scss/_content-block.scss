@@ -1,0 +1,110 @@
+.content-block{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+        @media (min-width:768px){
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        @media (min-width:1440px){
+            padding-left: 34px;
+            padding-right: 28px;
+        }
+
+    }
+    &__wrapper--textwithimg{
+        padding-left: 0px;
+        padding-right: 0px;
+        @media (min-width:768px){
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        @media (min-width:1440px){
+            padding-left: 34px;
+            padding-right: 28px;
+        }
+    }
+    &__description{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        padding: 0 16px;
+        overflow: hidden;
+        @media (min-width:768px){
+            padding: 0;
+            margin-bottom: 0;
+            width: 42.76%;
+        }
+        @media (min-width:1440px){
+            padding: 0;
+            margin-bottom: 0;
+            width: 46.25%;
+        }
+    }
+    &__spoiler{
+        height: 90px;
+        overflow: hidden;
+        @media (min-width:768px){
+            height: 160px;
+        }
+    }
+    &__button{
+        margin-top: 16px;  
+    }
+    &__button--arrow-right{
+        margin-top: 16px;
+        display: flex;
+        background: none;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+    }
+    &__button-text{
+      /*  white-space: nowrap;*/
+    }
+    &__button-icon{
+        margin-left: 9px;
+        padding-top: 4px
+    }
+    &__text-with-button{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 59%;
+    }
+    &__wrapper-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width:768px){
+            width: 50%;
+        }
+    }
+    &__img {
+        width: 100%; 
+        @media (min-width:768px){
+            border-radius: 6px;
+            max-width: 425px;
+        }
+        @media (min-width:1440px){
+            max-width: 550px;
+        }
+    }
+    &__title{
+        padding: 16px 16px;
+        background: linear-gradient(270deg, var(--main-bg-color) 0%, var(--nothing-bg-color) 98.61%); 
+        border-top: 1px solid var(--block-border-color);
+        @media (min-width:768px){
+            padding: 16px 24px;
+        }
+        @media (min-width:1440px){
+            padding: 16px 34px;
+        }
+    }
+    &__title-text{
+        text-transform: uppercase;
+    }
+}

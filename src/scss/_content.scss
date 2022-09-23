@@ -1,0 +1,110 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;  /*Уточни, может потом это убрать??*/
+    &__outer-wrapper{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 88px;
+        background-color: var(--main-bg-color);
+        @media (min-width:1440px){
+            padding-top: 0;
+        }
+    }
+    &__inner-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        @media (min-width:768px){
+            padding-top: 24px;
+            padding-bottom: 32px;
+        } 
+        @media (min-width:1440px){
+            padding-top: 24px;
+            padding-bottom: 50px;
+        }
+    }
+    &__inner-wrapper--scroll{
+        padding-top: 24px;
+        padding-bottom: 6px;
+        @media (min-width:768px){
+            padding-top: 32px;
+            padding-bottom: 0px;
+        } 
+        @media (min-width:1440px){
+            padding-top: 10px;
+            padding-bottom: 0;
+        }
+    }
+    &__inner-wrapper--under-overflow{
+        padding-top: 0px;
+        @media (min-width:768px){
+            padding-top: 14px;
+        }
+        @media (min-width:1440px){
+            padding-top: 30px;
+        } 
+    }
+    &__header{
+        display: flex;
+        width: 100%;
+        padding: 24px 16px 0;
+        justify-content: space-between;
+        @media (min-width:768px){
+            padding: 24px 24px 0;
+        }
+        @media (min-width:1440px){
+            padding: 42px 32px 0;
+        } 
+    }
+    &__header-buttons{
+        display: none;
+        @media (min-width:1440px){
+            display: flex;
+        } 
+    }
+    &__header-button:not(:last-child){
+        margin-right: 32px;
+    }
+    &__h1{
+        position: relative;
+        margin:0;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+    }
+    &__h1:first-child::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        background-color: var(--subtitle-decorate-color);
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        z-index: 10;
+        top: 0px;
+        left: -16px;
+        width: 3px;
+        @media (min-width:768px){
+            left: -24px;
+        }
+        @media (min-width:1440px){
+            left: -32px;
+        }
+    }
+    &__navigation{
+        transform: translate3d(16px, 0px, 0px);
+        @media (min-width:768px){
+            transform: translate3d(24px, 0px, 0px);
+        }
+        @media (min-width:1440px){
+            transform: translate3d(32px, 0px, 0px);
+        }
+    }
+
+}
+
+
+

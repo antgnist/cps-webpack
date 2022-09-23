@@ -1,0 +1,14 @@
+.button-with-text{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: none;
+    transition: color .4s;
+    &:hover {
+        color: var(--main-theme-color);
+    }
+    &__left-text{
+        padding-right: 9px;
+    }
+}

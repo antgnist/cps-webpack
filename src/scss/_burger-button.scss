@@ -1,0 +1,80 @@
+.burger-button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-theme-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    transition: filter .4s, background-color .4s;
+    &:hover{
+      background-color: var(--hoverelement-bg-color);
+    }
+
+    &__wrapper {
+        height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+  	}
+    &__line{
+        width: 10px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: var(--nothing-bg-color);
+        transition: width 0.4s, transform 0.4s, opacity 0.4s;
+    }
+    &__line-top{
+        width: 18px;
+    }
+    &__line-bott{
+        width: 14px;
+    }
+    &--open {
+      z-index: 250;
+    }
+
+    &--open .burger-button__line-top{
+      width: 21.73px;
+      transform: translateX(0px) translateY(7px) rotate(-45deg);
+      height: 2.17px;
+    }
+    
+    &--open .burger-button__line-bott{
+      width: 21.73px;
+      transform: translateX(0px) translateY(-7px) rotate(45deg);
+      height: 2.17px;
+    }
+    
+    &--open .burger-button__line-mid{
+      opacity: 0;
+    }
+
+}
+
+
+.burger-button:hover .burger-button__line{
+  background-color: var(--main-theme-color);
+}
+
+/*-- Исправить это ниже --*/
+/*
+  .side-navigation__burger-button--open .burger-button__line-top{
+    width: 21.73px;
+    transform: translateX(0px) translateY(7px) rotate(-45deg);
+    height: 2.17px;
+  }
+  
+  .side-navigation__burger-button--open  .burger-button__line-bott{
+    width: 21.73px;
+    transform: translateX(0px) translateY(-7px) rotate(45deg);
+    height: 2.17px;
+  }
+  
+  .side-navigation__burger-button--open  .burger-button__line-mid{
+    opacity: 0;
+  }
+*/
+
